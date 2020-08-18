@@ -1,0 +1,123 @@
+<!--Navigation bar-->
+<nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <button mat-mini-fab color="accent" aria-label="Example icon button with a home icon">
+        <mat-icon>home</mat-icon>
+      </button>
+      <span id="websiteName"> Fitness Club</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link scroll-link" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll-link" routerLink="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <!-- Button trigger modal for User-->
+          <button type="button" mat-raised-button color="primary" data-toggle="modal" data-target="#exampleModal">Search</button>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll-link" href="#blog">Contact</a>
+        </li>
+        <li class="nav-item">
+          <!-- Button trigger modal for Admin-->
+          <button type="button" mat-raised-button color="primary" data-toggle="modal" data-target="#exampleModal2">Admin Login</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Modal For User-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="exampleModalLabel" class="login">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <mat-form-field class="container">
+          <input matInput placeholder="Username">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field class="container">
+          <input matInput placeholder="Password">
+        </mat-form-field>
+      </div>
+      <div class="modal-footer">
+        <button type="button" mat-raised-button color="primary" data-dismiss="modal"><a id="login" routerLink="/user">Login</a></button>
+        <button type="button" mat-raised-button color="accent" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal For Admin-->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="exampleModalLabel" class="login">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <mat-form-field class="container">
+          <input matInput placeholder="Username">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field class="container">
+          <input matInput placeholder="Password">
+        </mat-form-field>
+      </div>
+      <div class="modal-footer">
+        <button type="button" mat-raised-button color="primary" data-dismiss="modal"><a id="login" routerLink="/admin">Login</a></button>
+        <button type="button" mat-raised-button color="accent" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 footer-left">
+        <p>&copy;Fitness Club Website. Download App for free on <a href="#">Fitness Club</a>.</p>
+        <small><i>- Kalhari Chathumini Ekanayake.<br>
+        - Informatics Institue of Technology, Sri Lanka.</i></small>
+      </div>
+
+      <div class="col-md-6 offset-md-1 footer-right">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col footer-bottom">
+        <a class="scroll-link" href="#"><i class="fas fa-chevron-up"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>

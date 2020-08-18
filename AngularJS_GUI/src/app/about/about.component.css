@@ -1,0 +1,32 @@
+/***** About Content *****/
+#mid-content {
+    margin-top: 140px;
+    margin-bottom: 70px;
+}
+.card-title {
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+    color: peru;
+}
+
+.card-text {
+    text-align: center;
+}
+
+/***** Portfolio *****/
+.center {
+    margin-left: 20px;
+    text-align: center;
+}
+  
+.contentTopic{
+    color: darkslateblue;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
+#portfolio {
+    margin-bottom: 50px;
+}
+  

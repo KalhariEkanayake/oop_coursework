@@ -1,0 +1,20 @@
+/***** Main Content *****/
+#topic1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    color: darkslateblue;
+}
+
+#topic2 {
+    text-align: center;
+    margin-top: -4px;
+    color: peru;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,110 @@
+/***** Navigation bar *****/
+.navbar {
+	background: #444;
+    -o-transition: all .6s; 
+    -moz-transition: all .6s; 
+    -webkit-transition: all .6s; 
+    -ms-transition: all .6s; 
+    transition: all .6s;
+	backface-visibility: hidden;
+}
+
+.navbar.navbar-no-bg { 
+    background: #444; 
+    background: rgba(0, 0, 0, 0.65); 
+}
+
+.navbar-dark .navbar-nav { 
+    font-size: 15px; 
+    color: #fff; 
+    font-weight: 600; 
+}
+
+.navbar-dark .navbar-nav .nav-link { 
+    color: #fff; 
+    color: rgba(255, 255, 255, 0.8); 
+    border: 0; 
+}
+
+.navbar-dark .navbar-nav .nav-link:hover { 
+    color: #fff; 
+}
+
+.navbar-dark .navbar-nav .nav-link:focus { 
+    color: #fff; 
+    outline: 0; 
+}
+
+.navbar-expand-md .navbar-nav .nav-link { 
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+}
+
+.nav-item {
+    text-align: center;
+}
+
+#login {
+    color: white;
+    text-decoration: none;
+}
+
+.login {
+    margin-left: 200px;
+    font-size: 22px;
+    color: green;
+    font-weight: bold;
+}
+
+#websiteName {
+    font-size: 20px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+}
+
+/***** Footer *****/
+footer {
+	padding: 40px 0 0 0;
+	background: #444;
+	color: #aaa;
+	text-align: left;
+}
+
+.footer-left a { 
+    color: #ddd; 
+    border-bottom: 1px dashed #ddd; 
+}
+
+.footer-left a:hover, .footer-left a:focus { 
+    color: #ddd; 
+    border: 0; 
+}
+
+.footer-right {
+	text-align: right;
+}
+
+.footer-right a {
+	margin: 0 6px;
+    font-size: 32px;
+    color: #aaa;
+}
+
+.footer-right a:hover, .footer-right a:focus { 
+    color: #eee; 
+}
+
+.footer-bottom {
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+.footer-bottom a {
+	font-size: 32px;
+    color: #666;
+    line-height: 40px;
+}
+
+.footer-bottom a:hover, .footer-bottom a:focus { 
+    color: #888; 
+}
